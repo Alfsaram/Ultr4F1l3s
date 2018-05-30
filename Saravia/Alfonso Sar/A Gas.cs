@@ -10,6 +10,8 @@ namespace Alfonso_Sar
     {
         public string producto_a_gas { get; set; }
 
+        public int Cocinar;
+
         public void ProdA_Gas()
         {
             Console.WriteLine(producto_a_gas);

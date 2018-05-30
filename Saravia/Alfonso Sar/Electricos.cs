@@ -10,6 +10,8 @@ namespace Alfonso_Sar
     {
         public string productoElectricos { get; set; }
 
+        public int Calentar;
+
         public void ProdElectricos()
         {
             Console.WriteLine(productoElectricos);

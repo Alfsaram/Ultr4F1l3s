@@ -10,6 +10,8 @@ namespace Alfonso_Sar
     {
         public string productoMismo_Prepara { get; set; }
 
+        public int Preparar;
+
         public void ProdMismoPrepara()
         {
             Console.WriteLine(productoMismo_Prepara);

@@ -10,6 +10,8 @@ namespace Alfonso_Sar
     {
         public string productoAlimentos { get; set; }
 
+        public string Marca;
+
         public void ProdAlimentos()
         {
             Console.WriteLine(productoAlimentos);

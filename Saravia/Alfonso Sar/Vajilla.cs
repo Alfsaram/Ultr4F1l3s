@@ -10,6 +10,8 @@ namespace Alfonso_Sar
     {
         public string productoVajilla { get; set; }
 
+        public bool Contenido;
+
         public void ProdVajilla()
         {
             Console.WriteLine(productoVajilla);

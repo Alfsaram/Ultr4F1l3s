@@ -10,50 +10,171 @@ namespace Alfonso_Sar
     {
         static void Main(string[] args)
         {
+            string confirm;
+
+            Consumibles Consum = new Consumibles();
+            Utensilios Utens = new Utensilios();
+            Artefactos Artfac = new Artefactos();
+            Utensilios platos = new Utensilios();
+            Utensilios tenedores = new Utensilios();
+            Mobiliario mobil = new Mobiliario();
+
+            bool phase1 = false;
+            bool phase2 = false;
+            bool phase3 = false;
+            bool phase4 = false;
+            bool phase5 = false;
+
             Console.WriteLine("Hola, Bienvenido a la Cocina");
-            Console.WriteLine("Listo para cocinar?? (Y/N)");
-            Console.ReadLine();
-            Console.Clear();
+            Console.WriteLine("");
+            while (phase1 == false)
+            {
+                Console.WriteLine("Listo para cocinar?? (Y/N)");
+                confirm = Console.ReadLine();
+                while (confirm != "Y" && confirm != "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Disculpe??: Y/N");
+                    confirm = Console.ReadLine();
+                }
+                while (confirm == "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Entendido; que tenga buen día, presione cualquier tecla para salir.");
+                    Console.ReadKey();
+                    Environment.Exit(0);
+                }
+                if (confirm == "Y")
+                phase1 = true;
+                Console.Clear();
+            }
+            
             Console.WriteLine("Que planea usar como ingredientes??");
             Console.WriteLine("");
-            Consumibles Consum = new Consumibles();
             Consum.Ingredientes();
-            Console.ReadLine();
             Console.Clear();
+            Console.WriteLine("Estos serian sus ingredientes, listo para Preparar??");
+            Console.WriteLine("");
+            while (phase2 == false)
+            {
+                Console.WriteLine("(Y/N)");
+                confirm = Console.ReadLine();
+                while (confirm != "Y" && confirm != "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Disculpe??: Y/N");
+                    confirm = Console.ReadLine();
+                }
+                while (confirm == "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Entendido; que tenga buen día, presione cualquier tecla para salir.");
+                    Console.ReadKey();
+                    Environment.Exit(0);
+                }
+                if (confirm == "Y")
+                    phase2 = true;
+                Console.Clear();
+            }
+
             Console.WriteLine("Genial, Que materiales de cocina planea usar??");
             Console.WriteLine("");
-            Utensilios Utens = new Utensilios();
             Utens.Materiales();
-            Console.ReadLine();
             Console.Clear();
             Console.WriteLine("Muy bien, Donde planea preparar su plato??");
             Console.WriteLine("");
-            Artefactos Artfac = new Artefactos();
             Artfac.ProdArtefactos();
-            Console.ReadLine();
             Console.Clear();
+            Console.WriteLine("Seguro con lo que usara para prepara su plato??");
+            Console.WriteLine("");
+            while (phase3 == false)
+            {
+                Console.WriteLine("(Y/N)");
+                confirm = Console.ReadLine();
+                while (confirm != "Y" && confirm != "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Disculpe??: Y/N");
+                    confirm = Console.ReadLine();
+                }
+                while (confirm == "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Entendido; que tenga buen día, presione cualquier tecla para salir.");
+                    Console.ReadKey();
+                    Environment.Exit(0);
+                }
+                if (confirm == "Y")
+                    phase3 = true;
+                Console.Clear();
+            }
+
             Console.WriteLine("Genial, usted a preparado su plato, donde desea servirlo??");
             Console.WriteLine("");
-            Utensilios platos = new Utensilios();
             platos.Platos();
-            Console.ReadLine();
             Console.Clear();
             Console.WriteLine("Que planea usar para comer??");
             Console.WriteLine("");
-            Utensilios tenedores = new Utensilios();
             platos.Tenedores();
-            Console.ReadLine();
             Console.Clear();
+            Console.WriteLine("Se siente conforme con lo que va a usar para comer??");
+            Console.WriteLine("");
+            while (phase4 == false)
+            {
+                Console.WriteLine("(Y/N)");
+                confirm = Console.ReadLine();
+                while (confirm != "Y" && confirm != "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Disculpe??: Y/N");
+                    confirm = Console.ReadLine();
+                }
+                while (confirm == "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Entendido; que tenga buen día, presione cualquier tecla para salir.");
+                    Console.ReadKey();
+                    Environment.Exit(0);
+                }
+                if (confirm == "Y")
+                    phase4 = true;
+                Console.Clear();
+            }
+
             Console.WriteLine("Felicidades, donde desea dejar los restos??");
             Console.WriteLine("");
-            Mobiliario Mobil = new Mobiliario();
-            Mobil.ProdMobiliario();
-            Artefactos refri = new Artefactos();
-            refri.Refri();
-            Console.ReadLine();
+            mobil.ProdMobiliario();
             Console.Clear();
-            Console.WriteLine("Hecho, presione cualquier tecla para salir");
-            Console.ReadKey();
+            Console.WriteLine("Desea dejarlos ahí??");
+            Console.WriteLine("");
+            while (phase5 == false)
+            {
+                Console.WriteLine("(Y/N)");
+                confirm = Console.ReadLine();
+                while (confirm != "Y" && confirm != "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Disculpe??: Y/N");
+                    confirm = Console.ReadLine();
+                }
+                while (confirm == "N")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Entendido; que tenga buen día, presione cualquier tecla para salir.");
+                    Console.ReadKey();
+                    Environment.Exit(0);
+                }
+                if (confirm == "Y")
+                    phase5 = true;
+                Console.Clear();
+            }
+
+            if (phase1 == true && phase2 == true && phase3 == true && phase4 == true && phase5 == true)
+            {
+                Console.WriteLine("Hecho, presione cualquier tecla para salir");
+                Console.ReadKey();
+            }
+           
         }
     }
 }

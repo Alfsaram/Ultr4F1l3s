@@ -10,6 +10,8 @@ namespace Alfonso_Sar
     {
         public string productoPreservadores{ get; set; }
 
+        public int Preservardor;
+
         public void ProdPreservador()
         {
             Console.WriteLine(productoPreservadores);

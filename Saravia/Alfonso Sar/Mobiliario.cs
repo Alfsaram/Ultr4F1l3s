@@ -10,6 +10,9 @@ namespace Alfonso_Sar
     {
         public string productoMobiliario { get; set; }
 
+        public int Cant_Max = 10;
+        public float Cantidad;
+
         public void ProdMobiliario()
         {
             Console.WriteLine(productoMobiliario);
@@ -17,8 +20,9 @@ namespace Alfonso_Sar
 
         public Mobiliario()
         {
-            Console.WriteLine("Lavaplatos");
+            Console.WriteLine("Lavadora");
             Console.WriteLine("Chimenea");
+            Console.ReadLine();
         }
     }
 }

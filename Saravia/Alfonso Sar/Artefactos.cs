@@ -10,6 +10,10 @@ namespace Alfonso_Sar
     {
         public string productoArtefactos { get; set; }
 
+        public bool Encendido;
+        public float Cantidad;
+        public int Cant_Max = 6;
+
         public void ProdArtefactos()
         {
             Artefactos_de_Preparacion ArtPre = new Artefactos_de_Preparacion();

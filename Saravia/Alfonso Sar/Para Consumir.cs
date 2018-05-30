@@ -10,6 +10,8 @@ namespace Alfonso_Sar
     {
         public string productoPara_Consumir { get; set; }
 
+        public bool Uso_de_Mano;
+
         public void ProdParaConsumir()
         {
             Console.WriteLine(productoPara_Consumir);

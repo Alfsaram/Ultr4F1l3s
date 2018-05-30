@@ -10,6 +10,10 @@ namespace Alfonso_Sar
     {
         public string productoUtensilios { get; set; }
 
+        public int Cant_Max = 10;
+        public float Cantidad;
+        public bool Calidad;
+
         public void Materiales()
         {
             Preparacion Prepar = new Preparacion();

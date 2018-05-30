@@ -10,6 +10,8 @@ namespace Alfonso_Sar
     {
         public string productoNecesita_Cocina { get; set; }
 
+        public int Cocinar;
+
         public void ProdNecesitaCocina()
         {
             Console.WriteLine(productoNecesita_Cocina);

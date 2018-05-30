@@ -10,9 +10,13 @@ namespace Alfonso_Sar
     {
         public string productoConsumibles { get; set; }
 
+        public DateTime Vencimiento;
+        public float Peso;
+        public bool Calidad;
 
         public void Ingredientes()
         {
+
             Alimentos Alimen = new Alimentos();
             Aderezos Aderez = new Aderezos();
             Condimentos Condim = new Condimentos();
@@ -20,7 +24,8 @@ namespace Alfonso_Sar
             Alimen.ProdAlimentos();
             Aderez.ProdAderezos();
             Condim.ProdCondimentos();
-       
+
+            Console.ReadLine();
         }
     }
 }
