@@ -17,7 +17,6 @@ namespace Alfonso_Sar
             Artefactos Artfac = new Artefactos();
             Utensilios platos = new Utensilios();
             Utensilios tenedores = new Utensilios();
-            Mobiliario mobil = new Mobiliario();
 
             bool phase1 = false;
             bool phase2 = false;
@@ -53,7 +52,7 @@ namespace Alfonso_Sar
             Console.WriteLine("");
             Consum.Ingredientes();
             Console.Clear();
-            Console.WriteLine("Estos serian sus ingredientes, listo para Preparar??");
+            Console.WriteLine("Eso serian sus ingredientes, listo para Preparar??");
             Console.WriteLine("");
             while (phase2 == false)
             {
@@ -143,6 +142,7 @@ namespace Alfonso_Sar
 
             Console.WriteLine("Felicidades, donde desea dejar los restos??");
             Console.WriteLine("");
+            Mobiliario mobil = new Mobiliario();
             mobil.ProdMobiliario();
             Console.Clear();
             Console.WriteLine("Desea dejarlos ahí??");
